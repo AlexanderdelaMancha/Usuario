@@ -1,0 +1,16 @@
+<%- include("templates/encabezado")%>
+<div class="content">
+    <div class="datos">
+        <h1>Datos capturados del alumno: </h1>
+        <h4><%= nom%></h4>
+        <h4><%= celular%></h4>
+        <h4><%= correo%></h4>
+        <a href="/datosNuevo/<%= nom %>/<%= celular%>/<%= correo%>">Enviar Datos</a>
+    </div>
+</div>
+<%
+var nombre = nom;
+var celular = celular;
+var correo = correo; 
+%>
+<%- include("templates/pie")%>
